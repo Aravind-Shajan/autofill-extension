@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Form</title>
+    <style>
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+        .radio-group {
+            display: flex;
+            justify-content: space-between;
+        }
+        .radio-group input {
+            width: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="/submit" method="POST">
+        <label>Title: *</label>
+        <div class="radio-group">
+            <label><input type="radio" name="title" value="Mr" required> Mr</label>
+            <label><input type="radio" name="title" value="Mrs" required> Mrs</label>
+            <label><input type="radio" name="title" value="Miss" required> Miss</label>
+            <label><input type="radio" name="title" value="Ms" required> Ms</label>
+        </div>
+
+        <label for="name"> Name: *</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="maidenName">Maiden Name: *</label>
+        <input type="text" id="maidenName" name="maidenName" required>
+
+        <label for="dob">Customer DOB: *</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <label for="email">Email: *</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="clientRef">Client Ref:</label>
+        <input type="text" id="clientRef" name="clientRef">
+
+        <label>Application Type:</label>
+        <div class="radio-group">
+            <label><input type="radio" name="applicationType" value="Single" checked required> Single</label>
+            <label><input type="radio" name="applicationType" value="Joint" required> Joint</label>
+        </div>
+
+        <label for="buildingNumber">Building Number: *</label>
+        <input type="text" id="buildingNumber" name="buildingNumber" required>
+
+        <label for="buildingName">Building Name:</label>
+        <input type="text" id="buildingName" name="buildingName">
+
+        <label for="streetName">Street Name:</label>
+        <input type="text" id="streetName" name="streetName">
+
+        <label for="town">Town:</label>
+        <input type="text" id="town" name="town">
+
+        <label for="state">State:</label>
+        <input type="text" id="state" name="state">
+
+        <label for="country">Country:</label>
+        <input type="text" id="country" name="country">
+
+        
+
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>

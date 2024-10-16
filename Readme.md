@@ -77,9 +77,10 @@
 
 ### Step 3: Use the Extension
 
-1. Click on the extension icon in the browser and press **Fill Form**.
-2. Enter the `Customer ID` when prompted.
-3. The form fields on the active tab will automatically be filled with the customer's data.
+1. Open the `sampleform.html` in your browser to test the API.
+2. Click on the extension icon in the browser and press **Fill Form**.
+3. Enter the `Customer ID` when prompted.
+4. The form fields on the active tab will automatically be filled with the customer's data.
 
 ## License
 
