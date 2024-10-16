@@ -4,6 +4,15 @@
 
 **Form Autofiller** is a browser extension that automates the process of filling forms using data retrieved from the IE Hub API. The extension prompts the user for a `Customer ID`, fetches data from the API, and populates fields in the active form. This tool is particularly useful for users handling customer information and forms in the IE Hub creditor portal.
 
+## File Structure
+
+form-autofiller/
+  ├── manifest.json   # Chrome Extension Manifest file
+  ├── popup.html  # Popup HTML for the extension 
+  ├── popup.js  # JavaScript file for handling popup logic 
+  ├── content.js  # Content script to interact with web pages 
+  ├── sampleform.html   # Sample HTML form to test the API integration 
+
 ## Features
 
 - Automatically retrieves customer data using a `Customer ID`.
