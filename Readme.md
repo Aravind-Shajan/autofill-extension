@@ -73,6 +73,7 @@
      sessionID : "YOUR_SESSION_ID_HERE";
     ```
 3. Replace `"YOUR_SESSION_ID_HERE"` with the session ID you copied from the IE Hub portal.
+4. Goto extensions in browser and reload the extension again to make sure changes have been updated.
 
 ### Step 3: Use the Extension
 
