@@ -19,7 +19,7 @@
 
 ## Prerequisites
 
-- **Session ID**: You need a valid `session ID` to access the customer data. Log in to the [IE Hub creditor portal](https://www.iehubportal.com/) to get this session ID.
+- **Session ID**: You need a valid `session ID` to access the customer data. Log in to the [IE Hub creditor portal](https://creditor-dev.dynamatix.com) to get this session ID.
 - **Form Fields**: The target form must have input fields with matching IDs or names for the autofill to work correctly.
 
 ## Installation
@@ -54,29 +54,31 @@
 }
 
 
-Step 1: Obtain a Session ID
+## Usage Instructions
 
-    Log in to the IE Hub creditor portal.
-    Open your browser's Developer Tools (usually accessible via F12 or right-click > "Inspect").
-    Go to the Network tab and log in to the portal.
-    Find the request made to the API - (IEProfileAndSubscriptions) and look for the sessionId in the request headers or body.
-    Copy the sessionId.
+### Step 1: Obtain a Session ID
 
-Step 2: Update the Session ID in the Extension
+1. Log in to the [IE Hub creditor portal](https://www.iehubportal.com/).
+2. Open your browser's Developer Tools (usually accessible via F12 or right-click > "Inspect").
+3. Go to the **Network** tab and log in to the portal.
+4. Find the request made to the API (specifically for `IEProfileAndSubscriptions`) and look for the `sessionId` in the request headers or body.
+5. Copy the `sessionId`.
 
-    Open the popup.js file.
-    Locate the sessionID inside the fetchUserData function:
+### Step 2: Update the Session ID in the Extension
 
-    const sessionID = "YOUR_SESSION_ID_HERE";
+1. Open the `popup.js` file.
+2. Locate the `sessionID` variable inside the `fetchUserData` function:
+    ```javascript
+     sessionID : "YOUR_SESSION_ID_HERE";
+    ```
+3. Replace `"YOUR_SESSION_ID_HERE"` with the session ID you copied from the IE Hub portal.
 
-    Replace "YOUR_SESSION_ID_HERE" with the session ID you copied from the IE Hub portal.
+### Step 3: Use the Extension
 
-Step 3: Use the Extension
+1. Click on the extension icon in the browser and press **Fill Form**.
+2. Enter the `Customer ID` when prompted.
+3. The form fields on the active tab will automatically be filled with the customer's data.
 
-    Click on the extension icon in the browser and press Fill Form.
-    Enter the Customer ID when prompted.
-    The form fields on the active tab will automatically be filled with the customer's data.
+## License
 
-License
-
-This project is licensed under the MIT License. 
+This project is licensed under the MIT License.
