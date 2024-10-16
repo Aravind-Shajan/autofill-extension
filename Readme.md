@@ -7,11 +7,12 @@
 ## File Structure
 
 form-autofiller/
-  ├── manifest.json   # Chrome Extension Manifest file
-  ├── popup.html  # Popup HTML for the extension 
-  ├── popup.js  # JavaScript file for handling popup logic 
-  ├── content.js  # Content script to interact with web pages 
-  ├── sampleform.html   # Sample HTML form to test the API integration 
+  ├── manifest.json            # Chrome Extension Manifest file
+  ├── popup.html               # Popup HTML for the extension
+  ├── popup.js                 # JavaScript file for handling popup logic
+  ├── content.js               # Content script to interact with web pages
+  ├── sampleform.html          # Sample HTML form to test the API integration
+
 
 ## Features
 
