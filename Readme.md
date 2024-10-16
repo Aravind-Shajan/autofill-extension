@@ -26,7 +26,7 @@
 
 1. Clone or download this repository:
     ```bash
-    git clone https://github.com/your-repo/form-autofiller-extension.git
+    https://github.com/Aravind-Shajan/autofill-extension
     ```
 2. Open your browser and navigate to `chrome://extensions/`.
 3. Enable **Developer Mode**.
@@ -59,15 +59,13 @@ Step 1: Obtain a Session ID
     Log in to the IE Hub creditor portal.
     Open your browser's Developer Tools (usually accessible via F12 or right-click > "Inspect").
     Go to the Network tab and log in to the portal.
-    Find a request made to the API and look for the sessionId in the request headers or body.
+    Find the request made to the API - (IEProfileAndSubscriptions) and look for the sessionId in the request headers or body.
     Copy the sessionId.
 
 Step 2: Update the Session ID in the Extension
 
     Open the popup.js file.
-    Locate the following line:
-
-    javascript
+    Locate the sessionID inside the fetchUserData function:
 
     const sessionID = "YOUR_SESSION_ID_HERE";
 
@@ -81,4 +79,4 @@ Step 3: Use the Extension
 
 License
 
-This project is licensed under the MIT License.
+This project is licensed under the MIT License. 

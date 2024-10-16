@@ -22,7 +22,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 //function to fetch user data
 async function fetchUserData(customerID) {
-  console.log("$$$$$$$userID$$$$$$$ : ", customerID);
   const body = {
     sessionId: "e5f3459d-fab2-4550-aa7d-6b0f50ec9484",
     offset: "0",
